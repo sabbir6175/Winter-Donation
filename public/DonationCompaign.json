@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Warm Clothes for Dhaka City",
+    "image": "https://example.com/images/dhaka_campaign.jpg",
+    "description": "A campaign to collect warm winter clothes for the underprivileged in Dhaka city. The goal is to provide jackets, sweaters, and blankets to homeless individuals and families.",
+    "status": "Active",
+    "contactInfo": "contact@dhakacampaign.org",
+    "division": "Dhaka"
+  },
+  {
+    "id": 2,
+    "title": "Dhaka Winter Clothing Drive",
+    "image": "https://example.com/images/dhaka_drive.jpg",
+    "description": "Collecting and distributing winter clothing to low-income families across Dhaka Division to ensure no one is left out in the cold.",
+    "status": "Active",
+    "contactInfo": "dhakawinterdrive@gmail.com",
+    "division": "Dhaka"
+  },
+  {
+    "id": 3,
+    "title": "Chittagong Winter Clothing Drive",
+    "image": "https://example.com/images/chittagong_campaign.jpg",
+    "description": "This drive aims to help the rural and coastal areas of Chittagong by providing winter clothes to those who cannot afford them, especially during the harsh cold months.",
+    "status": "Active",
+    "contactInfo": "info@chittagongdonation.com",
+    "division": "Chittagong"
+  },
+  {
+    "id": 4,
+    "title": "Chittagong Coastal Winter Relief",
+    "image": "https://example.com/images/chittagong_coastal_relief.jpg",
+    "description": "A special campaign aimed at helping the coastal communities in Chittagong who often experience extreme cold conditions during the winter months.",
+    "status": "Active",
+    "contactInfo": "coastalchittagong@gmail.com",
+    "division": "Chittagong"
+  },
+  {
+    "id": 5,
+    "title": "Rajshahi Winter Relief Fund",
+    "image": "https://example.com/images/rajshahi_campaign.jpg",
+    "description": "A winter relief campaign focused on providing winter jackets, shawls, and other warm clothing to the people of Rajshahi, particularly in the rural areas where the cold hits the hardest.",
+    "status": "Upcoming",
+    "contactInfo": "rajsahifund@gmail.com",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 6,
+    "title": "Rajshahi Rural Winter Clothing Collection",
+    "image": "https://example.com/images/rajshahi_rural_campaign.jpg",
+    "description": "A campaign focused on collecting and distributing warm winter clothing for the underprivileged rural communities in Rajshahi.",
+    "status": "Upcoming",
+    "contactInfo": "ruralrajshahi@gmail.com",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 7,
+    "title": "Sylhet Warmth Donation Initiative",
+    "image": "https://example.com/images/sylhet_campaign.jpg",
+    "description": "An initiative to provide warm clothing to the underprivileged families in Sylhet Division. The campaign is focused on delivering thermal wear, blankets, and winter accessories.",
+    "status": "Active",
+    "contactInfo": "sylhetwarm@gmail.com",
+    "division": "Sylhet"
+  },
+  {
+    "id": 8,
+    "title": "Sylhet Winter Clothing Donation",
+    "image": "https://example.com/images/sylhet_clothing_campaign.jpg",
+    "description": "Collecting winter clothing and distributing it to impoverished families in Sylhet Division to help them survive the winter chill.",
+    "status": "Active",
+    "contactInfo": "sylhetwintersupport@gmail.com",
+    "division": "Sylhet"
+  },
+  {
+    "id": 9,
+    "title": "Khulna Clothing Donation Campaign",
+    "image": "https://example.com/images/khulna_campaign.jpg",
+    "description": "This campaign is designed to collect and distribute winter clothing such as sweaters, jackets, and woolen socks to needy people in Khulna, particularly those in rural areas.",
+    "status": "Completed",
+    "contactInfo": "khulnacampaign2024@gmail.com",
+    "division": "Khulna"
+  },
+  {
+    "id": 10,
+    "title": "Khulna Winter Gear Donation Drive",
+    "image": "https://example.com/images/khulna_gear_campaign.jpg",
+    "description": "A drive to collect winter clothing and essential gear for vulnerable communities in Khulna Division.",
+    "status": "Completed",
+    "contactInfo": "khulnageardrive@gmail.com",
+    "division": "Khulna"
+  },
+  {
+    "id": 11,
+    "title": "Barisal Winter Coat Distribution",
+    "image": "https://example.com/images/barisal_campaign.jpg",
+    "description": "A seasonal campaign to gather and distribute winter coats, gloves, and scarves to vulnerable communities in Barisal Division, helping people cope with the cold.",
+    "status": "Active",
+    "contactInfo": "barisalclothingdonate@gmail.com",
+    "division": "Barisal"
+  },
+  {
+    "id": 12,
+    "title": "Barisal Winter Clothing Assistance",
+    "image": "https://example.com/images/barisal_winter_assistance.jpg",
+    "description": "Distributing winter clothing like coats, woolen caps, and thermal wear to underprivileged people in Barisal, especially in the rural areas.",
+    "status": "Active",
+    "contactInfo": "barisalwinterassist@gmail.com",
+    "division": "Barisal"
+  },
+  {
+    "id": 13,
+    "title": "Rangpur Winter Clothing Distribution",
+    "image": "https://example.com/images/rangpur_campaign.jpg",
+    "description": "Providing warm clothes and blankets to vulnerable communities in Rangpur Division, ensuring they stay warm during the winter months.",
+    "status": "Upcoming",
+    "contactInfo": "rangpurwinterrelief@gmail.com",
+    "division": "Rangpur"
+  },
+  {
+    "id": 14,
+    "title": "Rangpur Winter Essentials Collection",
+    "image": "https://example.com/images/rangpur_essentials_campaign.jpg",
+    "description": "A campaign to collect and distribute winter essentials like sweaters, gloves, and blankets to needy people in Rangpur Division.",
+    "status": "Active",
+    "contactInfo": "rangpurcollection@gmail.com",
+    "division": "Rangpur"
+  },
+  {
+    "id": 15,
+    "title": "Mymensingh Winter Support Initiative",
+    "image": "https://example.com/images/mymensingh_support.jpg",
+    "description": "An initiative to distribute winter clothing including sweaters and blankets to the families in Mymensingh Division who are most in need of help.",
+    "status": "Active",
+    "contactInfo": "mymensinghwinter@gmail.com",
+    "division": "Mymensingh"
+  },
+  {
+    "id": 16,
+    "title": "Mymensingh Warm Clothing Campaign",
+    "image": "https://example.com/images/mymensingh_clothing.jpg",
+    "description": "Collecting and distributing warm clothing like jackets and thermal wear to low-income families in Mymensingh Division.",
+    "status": "Upcoming",
+    "contactInfo": "mymensinghdonate@gmail.com",
+    "division": "Mymensingh"
+  },
+  {
+    "id": 17,
+    "title": "Comilla Winter Clothing Donation",
+    "image": "https://example.com/images/comilla_campaign.jpg",
+    "description": "Aiming to provide winter clothing to impoverished communities in Comilla Division, focusing on rural areas.",
+    "status": "Active",
+    "contactInfo": "comillacampaign@gmail.com",
+    "division": "Chittagong"
+  },
+  {
+    "id": 18,
+    "title": "Comilla Winter Relief Fund",
+    "image": "https://example.com/images/comilla_relief.jpg",
+    "description": "A campaign to collect blankets, coats, and sweaters for vulnerable families in Comilla Division.",
+    "status": "Upcoming",
+    "contactInfo": "comillarelief@gmail.com",
+    "division": "Chittagong"
+  },
+  {
+    "id": 19,
+    "title": "Dhaka Winter Essentials Collection",
+    "image": "https://example.com/images/dhaka_essentials.jpg",
+    "description": "A winter collection campaign to gather essential items like warm jackets, hats, and gloves for the needy in Dhaka Division.",
+    "status": "Active",
+    "contactInfo": "dhakaessentials@gmail.com",
+    "division": "Dhaka"
+  },
+  {
+    "id": 20,
+    "title": "Dhaka Homeless Winter Relief",
+    "image": "https://example.com/images/dhaka_homeless.jpg",
+    "description": "Helping homeless people in Dhaka with winter clothing, including jackets, scarves, and gloves, to ensure they survive the harsh weather.",
+    "status": "Active",
+    "contactInfo": "dhakawinterhelp@gmail.com",
+    "division": "Dhaka"
+  }
+]

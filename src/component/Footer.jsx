@@ -1,44 +1,46 @@
 import React from 'react';
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaPhone } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="footer bg-base-200 text-base-content p-10">
-        <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
-        </nav>
-        <form>
-          <h6 className="footer-title">Newsletter</h6>
-          <fieldset className="form-control w-80">
-            <label className="label">
-              <span className="label-text">Enter your email address</span>
-            </label>
-            <div className="join">
-              <input
-                type="text"
-                placeholder="username@site.com"
-                className="input input-bordered join-item" />
-              <button className="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </fieldset>
-        </form>
-      </footer>
+      <footer className="bg-green-200 text-white py-8">
+  <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between">
+    
+    {/* Contact Information Section */}
+    <div className="flex-1 min-w-[250px] text-black ">
+      <h4 className="text-lg font-semibold mb-10">Contact Us</h4>
+      <p className="mb-2 flex items-center gap-3"><FaPhone></FaPhone> Phone: (123) 456-7890</p>
+      <p className="mb-2 flex items-center gap-3"><AiOutlineMail></AiOutlineMail> Email: contact@example.com</p>
+      <p className="mb-2 flex items-center gap-3"><FaLocationDot></FaLocationDot> Address: 123 Street Name, Rangpur, Bangladesh</p>
+    </div>
+    
+    {/* Social Media Links Section */}
+    <div className="flex-1 min-w-[250px] text-center text-black">
+      <h4 className="text-lg font-semibold mb-10">Follow Us</h4>
+      <div className="flex justify-center gap-6">
+        <a href="https://www.facebook.com/" className=" hover:text-blue-600 transition duration-300" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-facebook-f text-xl"></i>
+        </a>
+        <a href="https://twitter.com" className=" hover:text-blue-400 transition duration-300" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-twitter text-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/feed/" className=" hover:text-blue-700 transition duration-300" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin-in text-xl"></i>
+        </a>
+        <a href="https://www.instagram.com/sabbir01661/" className=" hover:text-pink-600 transition duration-300" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+    <div className="flex-1 min-w-[250px] text-center my-4 text-black">
+      <p className="text-sm">© 2024 Your Company Name. All Rights Reserved By  <span className='text-red-400'>Sabbir Hasan</span> </p>
+    </div>
+</footer>
+
+    
     );
 };
 

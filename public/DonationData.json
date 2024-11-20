@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Warm Clothes for Dhaka City",
+    "image": "https://i.ibb.co.com/1GBgH2G/Warm-Clothes-for-Dhaka-City.jpg",
+    "description": "A campaign to collect warm winter clothes for the underprivileged in Dhaka city. The goal is to provide jackets, sweaters, and blankets to homeless individuals and families.",
+    "status": "Active",
+    "contactInfo": "contact@dhakacampaign.org",
+    "division": "Dhaka"
+  },
+  {
+    "id": 2,
+    "title": "Dhaka Winter Clothing Drive",
+    "image": "https://i.ibb.co.com/LRm1DqF/Dhaka-Winter-Clothing-Drive.jpg",
+    "description": "A drive to collect winter clothing such as jackets, scarves, and gloves for low-income families across Dhaka city, ensuring no one is left out in the cold.",
+    "status": "Active",
+    "contactInfo": "dhakawinterdrive@gmail.com",
+    "division": "Dhaka"
+  },
+  {
+    "id": 3,
+    "title": "Chittagong Winter Clothing Drive",
+    "image": "https://i.ibb.co.com/XtXZ5VS/Chittagong-Winter-Clothing-Drive.jpg",
+    "description": "This drive aims to help the rural and coastal areas of Chittagong by providing winter clothes to those who cannot afford them, especially during the harsh cold months.",
+    "status": "Active",
+    "contactInfo": "info@chittagongdonation.com",
+    "division": "Chittagong"
+  },
+  {
+    "id": 4,
+    "title": "Chittagong Coastal Winter Relief",
+    "image": "https://i.ibb.co.com/W3bpWXC/Chittagong-Coastal-Winter-Relief.jpg",
+    "description": "A campaign to support coastal communities in Chittagong Division who struggle with the cold weather by providing essential winter clothing.",
+    "status": "Active",
+    "contactInfo": "coastalchittagong@gmail.com",
+    "division": "Chittagong"
+  },
+  {
+    "id": 5,
+    "title": "Rajshahi Winter Relief Fund",
+    "image": "https://i.ibb.co.com/hfzRtxD/Rajshahi-Winter-Relief-Fund.jpg",
+    "description": "A winter relief campaign focused on providing winter jackets, shawls, and other warm clothing to the people of Rajshahi, particularly in rural areas.",
+    "status": "Upcoming",
+    "contactInfo": "rajsahifund@gmail.com",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 6,
+    "title": "Rajshahi Rural Winter Clothing Collection",
+    "image": "https://i.ibb.co.com/jfvqP81/Rajshahi-Rural-Winter-Clothing-Collection.jpg",
+    "description": "A campaign to collect winter clothing for rural areas of Rajshahi, focusing on jackets, sweaters, and thermal wear for those in need.",
+    "status": "Upcoming",
+    "contactInfo": "ruralrajshahi@gmail.com",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 7,
+    "title": "Sylhet Warmth Donation Initiative",
+    "image": "https://i.ibb.co.com/m54rdpC/Sylhet-Warmth-Donation-Initiative.jpg",
+    "description": "An initiative to provide warm clothing to underprivileged families in Sylhet Division. The campaign focuses on delivering thermal wear, blankets, and winter accessories.",
+    "status": "Active",
+    "contactInfo": "sylhetwarm@gmail.com",
+    "division": "Sylhet"
+  },
+  {
+    "id": 8,
+    "title": "Sylhet Winter Clothing Donation",
+    "image": "https://i.ibb.co.com/9wQ5X8k/Sylhet-Winter-Clothing-Donation.jpg",
+    "description": "Collecting winter clothing to help families in Sylhet Division stay warm during the winter months. The goal is to distribute jackets, woolen socks, and blankets.",
+    "status": "Active",
+    "contactInfo": "sylhetwintersupport@gmail.com",
+    "division": "Sylhet"
+  },
+  {
+    "id": 9,
+    "title": "Khulna Clothing Donation Campaign",
+    "image": "https://i.ibb.co.com/WV392Wk/Khulna-Clothing-Donation-Campaign.jpg",
+    "description": "This campaign is designed to collect and distribute winter clothing such as sweaters, jackets, and woolen socks to needy people in Khulna, particularly those in rural areas.",
+    "status": "Completed",
+    "contactInfo": "khulnacampaign2024@gmail.com",
+    "division": "Khulna"
+  },
+  {
+    "id": 10,
+    "title": "Barisal Winter Coat Distribution",
+    "image": "https://i.ibb.co.com/hHRhTzd/Barisal-Winter-Coat-Distribution.jpg",
+    "description": "A seasonal campaign to gather and distribute winter coats, gloves, and scarves to vulnerable communities in Barisal Division, helping people cope with the cold.",
+    "status": "Active",
+    "contactInfo": "barisalclothingdonate@gmail.com",
+    "division": "Barisal"
+  }
+]

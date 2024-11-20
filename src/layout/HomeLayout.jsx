@@ -1,15 +1,18 @@
 import React from 'react';
-import Header from '../component/Header';
 import Navbar from '../component/Navbar';
-import Banner from '../component/Banner';
 import Footer from '../component/Footer';
+import { Outlet } from 'react-router-dom';
+
 
 const HomeLayout = () => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <Header></Header>
-            <Banner></Banner>
+        <div className='w-11/12 mx-auto'>
+           <header>
+                <Navbar></Navbar>
+           </header>
+           <main>
+                <Outlet></Outlet>
+           </main>
             <footer>
                 <Footer></Footer>
             </footer>
