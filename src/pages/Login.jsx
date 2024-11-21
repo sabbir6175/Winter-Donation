@@ -1,16 +1,14 @@
 
-
-// import { useState } from "react";
 import { useContext, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/authProvider";
 import { toast } from "react-toastify";
 
 
 const Login = () => {
   const emailRef = useRef()
-
-  // const [error, setError] = useState({})
+  const location = useLocation()
+  console.log(location)
   const {UserLogin,setUser,signInWithGoogle,ForgotPassword}=useContext(AuthContext)
   const navigate = useNavigate()
   const handleSubmit =(e)=>{
@@ -23,7 +21,7 @@ const Login = () => {
           .then(result => {
             setUser(result.user)
             toast.success('login successfully')
-            navigate('/')
+            navigate(location?.state? location.state : '/')
           })
           .catch(error=>{
            toast.error(error.code)
@@ -85,13 +83,6 @@ const handleForgotPassword =()=>{
                 className="input input-bordered"
                 required
             />
-            {/* {
-              error &&  <label className="label">
-              <a  className="text-red-500">
-                {error.message}
-              </a>
-            </label>
-            } */}
             <label onClick={handleForgotPassword} className="label">
               <a  href="#" className="label-text-alt link link-hover">
                 Forgot password?

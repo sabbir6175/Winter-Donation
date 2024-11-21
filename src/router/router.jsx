@@ -31,7 +31,7 @@ import PrivateRoute from "./PrivateRoute";
       },
       {
         path: '/DonationCampaigns/:id',
-        element: <DonateDetails></DonateDetails>,
+        element: <PrivateRoute><DonateDetails></DonateDetails></PrivateRoute>,
         loader: ()=>fetch('DonationData.json')
       },
       {

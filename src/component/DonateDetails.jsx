@@ -2,56 +2,48 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 
-
 const DonateDetails = () => {
-    const campaign = useLoaderData();
-    console.log(campaign) // Fetch the campaign data
-    const [formData, setFormData] = useState({
-      quantity: '',
-      itemType: '',
-      pickupLocation: '',
-      additionalNotes: '',
+  const DonationCart = useLoaderData();
+  // Fetch the campaign data
+  const [formData, setFormData] = useState({
+    quantity: "",
+    itemType: "",
+    pickupLocation: "",
+    additionalNotes: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success("Thank you! We will reach your destination soon.", {
+      position: "top-center",
     });
-  
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData((prev) => ({ ...prev, [name]: value }));
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      toast.success('Thank you! We will reach your destination soon.', {
-        position: "top-center",
-      });
-      setFormData({
-        quantity: '',
-        itemType: '',
-        pickupLocation: '',
-        additionalNotes: '',
-      });
-    };
-  
-    return (
-      <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-        <h1 className="text-3xl font-semibold">{campaign.title}</h1>
-        <img
-          src={campaign.image}
-          alt={campaign.title}
-          className="w-full h-72 object-cover mt-4 rounded-md"
-        />
-        <p className="mt-6 text-lg text-gray-700">{campaign.description}</p>
-        <p className="mt-4 text-sm text-gray-500">
-          <strong>Division:</strong> {campaign.division}
-        </p>
-        <p className="mt-2 text-sm text-gray-500">
-          <strong>Goal:</strong> {campaign.goal} BDT
-        </p>
-  
-        {/* Donation Form */}
+    setFormData({
+      quantity: "",
+      itemType: "",
+      pickupLocation: "",
+      additionalNotes: "",
+    });
+  };
+
+  return (
+    <div className="max-w-3xl mx-auto flex justify-between p-6 bg-white rounded-lg shadow-lg">
+     <div>
+      cart commning
+     </div>
+
+      {/* Donation Form */}
+      <div>
         <h2 className="mt-8 text-2xl font-semibold">Make a Donation</h2>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Quantity of items</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Quantity of items
+            </label>
             <input
               type="number"
               name="quantity"
@@ -62,9 +54,11 @@ const DonateDetails = () => {
               required
             />
           </div>
-  
+
           <div>
-            <label className="block text-sm font-medium text-gray-700">Item Type</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Item Type
+            </label>
             <input
               type="text"
               name="itemType"
@@ -75,9 +69,11 @@ const DonateDetails = () => {
               required
             />
           </div>
-  
+
           <div>
-            <label className="block text-sm font-medium text-gray-700">Pickup Location</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Pickup Location
+            </label>
             <input
               type="text"
               name="pickupLocation"
@@ -88,9 +84,11 @@ const DonateDetails = () => {
               required
             />
           </div>
-  
+
           <div>
-            <label className="block text-sm font-medium text-gray-700">Additional Notes (Optional)</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Additional Notes (Optional)
+            </label>
             <textarea
               name="additionalNotes"
               value={formData.additionalNotes}
@@ -99,7 +97,7 @@ const DonateDetails = () => {
               placeholder="Any additional instructions"
             />
           </div>
-  
+
           <button
             type="submit"
             className="mt-4 w-full bg-green-500 text-white py-3 rounded-md hover:bg-green-600 transition"
@@ -108,13 +106,8 @@ const DonateDetails = () => {
           </button>
         </form>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 export default DonateDetails;
-
-
-
-
-
-
