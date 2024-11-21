@@ -22,8 +22,8 @@ const Navbar = () => {
   );
   return (
     <div className=" ">
-      <div className="fixed top-0  rounded-lg bg-opacity-50 backdrop-blur-md bg-orange-300 z-10 w-full">
-        <div className="navbar ">
+      <div className="fixed top-0 px-4 py-3  bg-opacity-50 backdrop-blur-md bg-orange-300 z-10 w-full">
+        <div className="navbar container mx-auto">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -60,11 +60,11 @@ const Navbar = () => {
               alt=""
             />
             <a className="btn btn-ghost text-base font-extrabold md:text-lg lg:text-2xl pl-0">
-              Winter Donation
+             <span className="text-red-500">Winter</span> Donation
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal text-base font-bold px-1">{links}</ul>
+            <ul className="menu menu-horizontal text-base font-semibold px-1">{links}</ul>
           </div>
          
           <div className="navbar-end">
@@ -72,8 +72,8 @@ const Navbar = () => {
            {
             user && user?.email? (
               <>
-              <img src= {user && user?.photoURL} className='w-8 h-8 md:w-16 md:h-16 rounded-full object-cover border-2 border-blue-500'  alt="" />
-              <Link to={'/login'} onClick={logOut} className="btn ml-3 bg-red-400 ">Log-out</Link>
+              <img src= {user && user?.photoURL} className='w-8 ml-6 h-8 md:w-16 md:h-16 rounded-full object-cover border-2 border-blue-500'  alt="" />
+              <Link to={'/login'} onClick={logOut} className="btn md:ml-3 px-2 md:px-6 btn-sm md:btn-lg bg-red-400 ">Log-out</Link>
               </>
               
             ):(

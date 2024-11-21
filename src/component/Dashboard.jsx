@@ -8,7 +8,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <div className="min-h-screen bg-gray-100 flex items-center justify-center ">
+            <div className="md:min-h-screen bg-gray-100 flex items-center justify-center  px-4 md:px-8">
                 <div className="w-full max-w-3xl p-6 bg-white rounded-lg shadow-lg my-10">
                     <h1 className="text-2xl font-bold text-center text-blue-600">Welcome, {user && user?.displayName}! </h1>
                     <p className="text-center text-gray-600 mt-2">Here's your profile information</p>
@@ -22,8 +22,8 @@ const Dashboard = () => {
                         </div>
                     </div>
                     <div className="mt-6 flex justify-center gap-10">
-                      <Link to={'/update'} className='btn text-green-300 btn-wide bg-blue-500'>Update profile</Link>
-                      <Link to={'/login'} onClick={logOut} className="btn btn-wide bg-red-400 ">Log-out</Link>
+                      <Link to={'/update'} className='btn text-orange-500 md:btn-wide border-2 border-blue-300 bg-lime-200'>Update profile</Link>
+                      <Link to={'/login'} onClick={logOut} className="btn md:btn-wide bg-red-400 border-2 border-blue-300">Log-out</Link>
                     </div>
                   
                  </div>

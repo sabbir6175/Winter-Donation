@@ -5,7 +5,7 @@ const HowToHelp = () => {
         <div className='bg-white'>
             <div className='container mx-auto  py-20 '>
                 <h1 className='text-center font-bold text-3xl mb-3'>How To Help</h1>
-                <p className='text-center'>This winter, your donation can make a difference. With your support, we can provide warm clothing, blankets,<br /> and essential supplies to those in need. Every contribution, no matter how small,  helps ensure <br /> that individuals and families stay safe and warm through the cold months.</p>
+                <p className='text-center text-base text-gray-500'>This winter, your donation can make a difference. With your support, we can provide warm clothing, blankets,<br /> and essential supplies to those in need.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center my-20 px-3">
                     

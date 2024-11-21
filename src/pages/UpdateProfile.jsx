@@ -26,7 +26,7 @@ const UpdateProfile = () => {
       
     }
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div className="md:min-h-screen px-4 md:p2 bg-gray-100 flex items-center justify-center">
         <div className="w-full max-w-3xl p-6 bg-white rounded-lg shadow-sm my-10">
            <h2 className="text-center font-bold text-3xl py-5">Updated your profile Information</h2>
           <form  onSubmit={handleSubmit} className="card-body">
@@ -55,7 +55,7 @@ const UpdateProfile = () => {
               required
             />
           </div >
-            <button className='btn md:btn-wide mt-6 bg-green-300'>Update Information</button>
+            <button className='btn md:btn-wide mt-6 bg-green-300 border-2 border-blue-300'>Update Information</button>
           </form>
         </div>
       </div>

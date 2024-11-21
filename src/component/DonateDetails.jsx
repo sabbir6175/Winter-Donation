@@ -26,9 +26,8 @@ const DonateDetails = () => {
 
   
   return (
-    <div className="w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 my-12 p-6 bg-white rounded-lg">
-     
-        <div className=" bg-white shadow rounded-xl w-96 p-5 overflow-hidden">
+    <div className="w-9/12 md:w-full my-24 md:my-32 px-3 lg:my-44 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8   bg-white rounded-lg">
+        <div className=" bg-white shadow rounded-xl lg:w-60 p-5 overflow-hidden w-full">
               <img
                 src={DonationCart.image}
                 alt={DonationCart.title}

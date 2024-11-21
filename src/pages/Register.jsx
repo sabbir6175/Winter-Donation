@@ -60,13 +60,13 @@ const Register = () => {
 }
 
   return (
-    <div className="min-h-screen flex justify-center items-center my-10">
-      <div className="card bg-base-200 w-full max-w-lg border-2">
+    <div className="min-h-screen bg-gray-100 py-20 flex justify-center items-center mt-10">
+      <div className="card bg-green-100 w-full max-w-lg border-2 backdrop-blur-lg bg-opacity-40">
         <h2 className="text-center font-bold text-3xl py-5">
           Register your account
         </h2>
         <form onSubmit={handleSubmitFrom} className="card-body">
-          {/* name form */}
+        
           <div className="form-control">
             <label className="label">
               <span className="label-text">Name</span>
@@ -80,7 +80,7 @@ const Register = () => {
             />
           </div>
 
-          {/* Photo URL link */}
+          
           <div className="form-control">
             <label className="label">
               <span className="label-text">Photo URL</span>
@@ -93,7 +93,7 @@ const Register = () => {
               required
             />
           </div>
-          {/* email form */}
+          
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email address</span>
@@ -120,7 +120,7 @@ const Register = () => {
             />
             <button
               onClick={() => setShowPassword(!showPassword)}
-              className="btn btn-xs absolute right-10 top-[69%] md:top-[67%]"
+              className="btn btn-xs absolute right-10 top-[62%] "
             >
               {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
             </button>
@@ -134,9 +134,9 @@ const Register = () => {
             <button className="btn text-white bg-cyan-400">Register</button>
           </div>
         </form>
-        <button onClick={handleGoogleSignIn} className="btn mx-8 text-white bg-cyan-400">Sign in with Google</button>
+        <button onClick={handleGoogleSignIn} className="btn mx-8 text-white bg-red-400">Sign in with Google</button>
         <h2 className="text-lg text-center py-4">
-          Already have an account ?{" "}
+          Already have an account ? Please{" "}
           <Link className="text-red-400" to={"/login"}>
             login
           </Link>{" "}

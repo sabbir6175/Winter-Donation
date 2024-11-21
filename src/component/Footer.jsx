@@ -5,8 +5,8 @@ import { FaLocationDot } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-      <footer className="bg-green-200 text-white py-8">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between">
+      <footer className="bg-lime-100 text-white pt-8 pb-3">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-3 justify-between">
         
         <div className="flex-1 min-w-[250px] text-black ">
           <h4 className="text-lg font-semibold mb-10">Contact Us</h4>
