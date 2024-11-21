@@ -17,9 +17,16 @@ const Navbar = () => {
       <li>
         <Link to={"/HowToHelp"}>How to Help</Link>
       </li>
-      <li>
-        <Link to={"/dashboard"}>Dashboard</Link>
-      </li>
+     
+      {
+        user &&  <>
+           <li><Link to={"/dashboard"}>Dashboard</Link></li>
+        </> 
+      }
+        
+      
+       
+       
 
       {/* <li><NavLink>Home</NavLink></li> */}
     </>
@@ -58,22 +65,28 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <a className="btn btn-ghost text-base font-extrabold md:text-lg lg:text-2xl pl-0">
-              Winter Clothing Donation
-            </a>
             <img
               className="w-13 h-10 rounded-full hidden md:block"
               src={image}
               alt=""
             />
+            <a className="btn btn-ghost text-base font-extrabold md:text-lg lg:text-2xl pl-0">
+              Winter Donation
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal text-lg px-1">{links}</ul>
           </div>
          
           <div className="navbar-end">
-          <div>{user&& user.email}</div>
-            <Link to={'/login'} className="btn">Login</Link>
+          
+           {
+            user && user?.email? (
+              <img src= {user && user?.photoURL} className='w-8 h-8 md:w-16 md:h-16 rounded-full object-cover border-2 border-blue-500'  alt="" />
+            ):(
+              <Link to={'/login'} className="btn">Login</Link>
+            ) 
+           }
 
           </div>
         </div>

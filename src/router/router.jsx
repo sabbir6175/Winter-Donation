@@ -9,12 +9,16 @@ import Banner from "../component/Banner";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import DonateDetails from "../component/DonateDetails";
-import Error from "../component/Error";
+import ErrorPage from "../component/ErrorPage";
+import UpdateProfile from "../pages/updateProfile";
+import PrivateRoute from "./PrivateRoute";
+
   
   const router = createBrowserRouter([
     {
       path: "/",
       element: <HomeLayout></HomeLayout>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
       {
         path: '/',
@@ -36,7 +40,11 @@ import Error from "../component/Error";
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+      },
+      {
+        path: '/update',
+        element: <UpdateProfile></UpdateProfile>
       },
       {
         path:'/login',
@@ -45,8 +53,10 @@ import Error from "../component/Error";
       {
         path:'/login/Register',
         element:<Register></Register>
-      }
+      },
+      
       ],
+      
     },
   ]);
   export default router

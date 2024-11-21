@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 // }
 
 const DonationCard = ({data}) => {
-    console.log(data)
+    // console.log(data)
     const {id,image,title,description,division} = data;
     return (
         <div>
@@ -40,25 +40,6 @@ const DonationCard = ({data}) => {
               </Link>
             </div>
           </div>
-          {/* <div className="card bg-base-100 shadow-xl">
-                <figure className="px-10 pt-10">
-                    <img
-                    
-                    src={image}
-                    alt={title}
-                    className="rounded-xl w-full h-[200px]" />
-                </figure>
-                <div className="card-body items-center text-center">
-                    <h2 className="card-title">{title}</h2>
-                    <p>{description}</p>
-                    <p className="text-sm text-gray-500 mt-2">
-                        <strong>Division:</strong> {division}
-                    </p>
-                    <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                </div>
-                </div> */}
         </div>
     );
 };

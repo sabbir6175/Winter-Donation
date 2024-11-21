@@ -1,32 +1,66 @@
 
 
 // import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../Provider/authProvider";
+import { toast } from "react-toastify";
+
 
 const Login = () => {
+  const emailRef = useRef()
 
   // const [error, setError] = useState({})
-
-  // const handleSubmit =(e)=>{
-  //     e.preventDefault()
-  //     const form = e.target; 
-  //     const email = form.email.value;
-  //     const password =form.password.value;
-  //       console.log({email, password})
-  //       .then(result =>{
-  //         const user = result.user;
-  //         console.log(user)
-  //       })
-  //       .catch(error=>{
-  //           // console.log(error.message)
-  //         setError(error)
-  //       })
-  // }
+  const {UserLogin,setUser,signInWithGoogle,ForgotPassword}=useContext(AuthContext)
+  const navigate = useNavigate()
+  const handleSubmit =(e)=>{
+      e.preventDefault()
+      const form = e.target; 
+      const email = form.email.value;
+      const password =form.password.value;
+        // console.log({email, password})
+        UserLogin(email, password)
+          .then(result => {
+            setUser(result.user)
+            toast.success('login successfully')
+            navigate('/')
+          })
+          .catch(error=>{
+           toast.error(error.code)
+          })
+  }
+  const handleGoogleSignIn = ()=>{
+    signInWithGoogle()
+      .then(result =>{
+        setUser(result.user)
+        navigate('/')
+      })
+      .catch(error=>{
+        console.log(error.message)
+      })
+}
+const handleForgotPassword =()=>{
+    // console.log('get a email address',emailRef.current.value)
+    const email = emailRef.current.value
+    if(!email){
+      toast.warning('please provide a valid email address')
+    }
+    else{
+      ForgotPassword(email)
+        .then(()=>{
+          toast.success('Password reset email send, please check you email')
+        })
+        .catch(error=>{
+          toast.warning(error.message)
+        })
+    }
+    // ForgotPassword()
+}
   return (
-    <div className="min-h-screen flex justify-center items-center">
+    <div className="min-h-screen flex justify-center items-center my-10">
       <div className="card bg-red-50 w-full max-w-lg border-2">
          <h2 className="text-center font-bold text-3xl py-5">Login your account</h2>
-        <form  className="card-body">
+        <form  onSubmit={handleSubmit} className="card-body">
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email address</span>
@@ -34,9 +68,10 @@ const Login = () => {
             <input
                 name="email"
                 type="email"
+                ref={emailRef}
                 placeholder="Enter your email address"
                 className="input input-bordered"
-                required
+               required
             />
           </div>
           <div className="form-control">
@@ -57,17 +92,18 @@ const Login = () => {
               </a>
             </label>
             } */}
-            <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+            <label onClick={handleForgotPassword} className="label">
+              <a  href="#" className="label-text-alt link link-hover">
                 Forgot password?
               </a>
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn text-white bg-[#403F3F]">Login</button>
+            <button className="btn text-white bg-cyan-400">Login</button>
           </div>
         </form>
-        <h2 className="text-lg text-center py-4">Don't Have An Account ? <Link className="text-red-400" to={'/login/Register'}>Register</Link> </h2>
+          <button onClick={handleGoogleSignIn} className="btn mx-8 text-white bg-cyan-400">Sign in with Google</button>
+        <h2 className="text-lg text-center py-4">Don't have an Account ? <Link className="text-red-400" to={'/login/Register'}>Register</Link> </h2>
       </div>
     </div>
   );
