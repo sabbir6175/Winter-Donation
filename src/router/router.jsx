@@ -59,9 +59,7 @@ import PrivateRoute from "./PrivateRoute";
         path:'/login/Register',
         element:<Register></Register>
       },
-      
       ],
-      
     },
   ]);
   export default router
