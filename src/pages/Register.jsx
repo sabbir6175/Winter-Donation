@@ -34,28 +34,38 @@ const Register = () => {
     createNewUser(email, password)
       .then((result) => {
         setUser(result.user);
-        toast.success("user create successfully");
+        toast.success("user create successfully", {
+          position: "top-center",
+        });
         updateUserProfile({ displayName: name, photoURL: photo })
           .then(() => {
             navigate("/");
           })
           .catch((error) => {
-            setErrorMessage(error);
+            setErrorMessage(error, {
+              position: "top-center",
+            });
           });
       })
       .catch((error) => {
-        toast.warning(error.message);
+        toast.warning(error.message, {
+          position: "top-center",
+        });
       });
   };
   const handleGoogleSignIn = ()=>{
     signInWithGoogle()
       .then(result =>{
         setUser(result.user)
-        toast.success('login successfully')
+        toast.success('login successfully', {
+          position: "top-center",
+        })
         navigate(location?.state? location.state :'/')
       })
       .catch(error=>{
-        toast.error(error.message)
+        toast.error(error.message, {
+          position: "top-center",
+        })
       })
 }
 

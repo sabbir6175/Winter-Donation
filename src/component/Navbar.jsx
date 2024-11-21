@@ -73,7 +73,7 @@ const Navbar = () => {
             user && user?.email? (
               <>
               <img src= {user && user?.photoURL} className='w-8 ml-6 h-8 md:w-16 md:h-16 rounded-full object-cover border-2 border-blue-500'  alt="" />
-              <Link to={'/login'} onClick={logOut} className="btn md:ml-3 px-2 md:px-6 btn-sm md:btn-lg bg-red-400 ">Log-out</Link>
+              <Link to={'/login'} onClick={logOut} className="btn md:ml-3 px-2 md:px-6 btn-sm md:btn-lg btn-warning ">Log-out</Link>
               </>
               
             ):(

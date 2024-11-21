@@ -16,11 +16,15 @@ const UpdateProfile = () => {
         console.log(name, photo)
         updateUserProfile({ displayName: name, photoURL: photo })
         .then(() => {
-          toast.success('update profile success')
+          toast.success('update profile success', {
+            position: "top-center",
+          })
           navigate("/dashboard");
         })
         .catch((error) => {
-          toast.error(error);
+          toast.error(error, {
+            position: "top-center",
+          });
         });
         
       

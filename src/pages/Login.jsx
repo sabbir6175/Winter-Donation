@@ -33,26 +33,36 @@ const Login = () => {
     signInWithGoogle()
       .then(result =>{
         setUser(result.user)
-        toast.success('login successfully')
+        toast.success('login successfully', {
+          position: "top-center",
+        })
         navigate(location?.state? location.state :'/')
       })
       .catch(error=>{
-        toast.error(error.message)
+        toast.error(error.message, {
+          position: "top-center",
+        })
       })
 }
 const handleForgotPassword =()=>{
    
     const email = emailRef.current.value
     if(!email){
-      toast.warning('please provide a valid email address')
+      toast.warning('please provide a valid email address', {
+        position: "top-center",
+      })
     }
     else{
       ForgotPassword(email)
         .then(()=>{
-          toast.success('Password reset email send, please check you email')
+          toast.success('Password reset email send, please check you email', {
+            position: "top-center",
+          })
         })
         .catch(error=>{
-          toast.error(error.message)
+          toast.error(error.message, {
+            position: "top-center",
+          })
         })
     }
     
