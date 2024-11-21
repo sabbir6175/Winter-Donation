@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const ErrorPage = () => {
@@ -13,9 +14,7 @@ const ErrorPage = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
-                    <h2 className='text-8xl font-extrabold text-center mt-40 mb-3'>Error page 401</h2>
-                
-                    
+                    <Link to={'/'} className='text-8xl font-extrabold text-center mt-40 mb-3'>Error page 401</Link>
                     </div>
                 </div>
             </div>
