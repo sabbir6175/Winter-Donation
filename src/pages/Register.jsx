@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
-  const { createNewUser, setUser, updateUserProfile } = useContext(AuthContext);
+  const { createNewUser, setUser, updateUserProfile,signInWithGoogle } = useContext(AuthContext);
   const [errorMessage, setErrorMessage] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   
@@ -30,7 +30,7 @@ const Register = () => {
         return;
     }
 
-    console.log({ name, photo, email, password });
+    
     createNewUser(email, password)
       .then((result) => {
         setUser(result.user);
@@ -40,13 +40,24 @@ const Register = () => {
             navigate("/");
           })
           .catch((error) => {
-            console.log(error);
+            setErrorMessage(error);
           });
       })
       .catch((error) => {
         toast.warning(error.message);
       });
   };
+  const handleGoogleSignIn = ()=>{
+    signInWithGoogle()
+      .then(result =>{
+        setUser(result.user)
+        toast.success('login successfully')
+        navigate(location?.state? location.state :'/')
+      })
+      .catch(error=>{
+        toast.error(error.message)
+      })
+}
 
   return (
     <div className="min-h-screen flex justify-center items-center my-10">
@@ -123,6 +134,7 @@ const Register = () => {
             <button className="btn text-white bg-cyan-400">Register</button>
           </div>
         </form>
+        <button onClick={handleGoogleSignIn} className="btn mx-8 text-white bg-cyan-400">Sign in with Google</button>
         <h2 className="text-lg text-center py-4">
           Already have an account ?{" "}
           <Link className="text-red-400" to={"/login"}>

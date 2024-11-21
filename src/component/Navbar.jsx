@@ -5,7 +5,7 @@ import { AuthContext } from "../Provider/authProvider";
 
 
 const Navbar = () => {
-  const {user} = useContext(AuthContext)
+  const {user,logOut} = useContext(AuthContext)
   const links = (
     < >
       <li>
@@ -17,23 +17,12 @@ const Navbar = () => {
       <li>
         <Link to={"/HowToHelp"}>How to Help</Link>
       </li>
-     
-      {
-        user &&  <>
-           <li><Link to={"/dashboard"}>Dashboard</Link></li>
-        </> 
-      }
-        
-      
-       
-       
-
-      {/* <li><NavLink>Home</NavLink></li> */}
+      <li><Link to={"/dashboard"}>Dashboard</Link></li>
     </>
   );
   return (
     <div className=" ">
-      <div className="sticky top-0 rounded-lg bg-opacity-50 backdrop-blur-md bg-orange-300 z-10 ">
+      <div className="fixed top-0  rounded-lg bg-opacity-50 backdrop-blur-md bg-orange-300 z-10 w-full">
         <div className="navbar ">
           <div className="navbar-start">
             <div className="dropdown">
@@ -79,10 +68,14 @@ const Navbar = () => {
           </div>
          
           <div className="navbar-end">
-          
+           
            {
             user && user?.email? (
+              <>
               <img src= {user && user?.photoURL} className='w-8 h-8 md:w-16 md:h-16 rounded-full object-cover border-2 border-blue-500'  alt="" />
+              <Link to={'/login'} onClick={logOut} className="btn ml-3 bg-red-400 ">Log-out</Link>
+              </>
+              
             ):(
               <Link to={'/login'} className="btn">Login</Link>
             ) 

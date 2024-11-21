@@ -8,15 +8,12 @@ const Footer = () => {
       <footer className="bg-green-200 text-white py-8">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between">
         
-        {/* Contact Information Section */}
         <div className="flex-1 min-w-[250px] text-black ">
           <h4 className="text-lg font-semibold mb-10">Contact Us</h4>
           <p className="mb-2 flex items-center gap-3"><FaPhone></FaPhone> Phone: (123) 456-7890</p>
           <p className="mb-2 flex items-center gap-3"><AiOutlineMail></AiOutlineMail> Email: contact@example.com</p>
           <p className="mb-2 flex items-center gap-3"><FaLocationDot></FaLocationDot> Address: 123 Street Name, Rangpur, Bangladesh</p>
         </div>
-        
-        {/* Social Media Links Section */}
         <div className="flex-1 min-w-[250px] text-center text-black">
           <h4 className="text-lg font-semibold mb-10">Follow Us</h4>
           <div className="flex justify-center gap-6">
@@ -36,11 +33,9 @@ const Footer = () => {
         </div>
       </div>
         <div className="flex-1 min-w-[250px] text-center my-4 text-black">
-          <p className="text-sm">© 2024 Your Company Name. All Rights Reserved By  <span className='text-red-400'>Sabbir Hasan</span> </p>
+          <p className="text-sm">@2024 Your Donation Campaigns . All Rights Reserved By  <span className='text-red-400'>Sabbir Hasan</span> </p>
         </div>
-</footer>
-
-    
+      </footer>
     );
 };
 

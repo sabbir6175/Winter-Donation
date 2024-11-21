@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 const Login = () => {
   const emailRef = useRef()
   const location = useLocation()
-  console.log(location)
+ 
   const {UserLogin,setUser,signInWithGoogle,ForgotPassword}=useContext(AuthContext)
   const navigate = useNavigate()
   const handleSubmit =(e)=>{
@@ -16,7 +16,7 @@ const Login = () => {
       const form = e.target; 
       const email = form.email.value;
       const password =form.password.value;
-        // console.log({email, password})
+        
         UserLogin(email, password)
           .then(result => {
             setUser(result.user)
@@ -31,14 +31,15 @@ const Login = () => {
     signInWithGoogle()
       .then(result =>{
         setUser(result.user)
-        navigate('/')
+        toast.success('login successfully')
+        navigate(location?.state? location.state :'/')
       })
       .catch(error=>{
-        console.log(error.message)
+        toast.error(error.message)
       })
 }
 const handleForgotPassword =()=>{
-    // console.log('get a email address',emailRef.current.value)
+   
     const email = emailRef.current.value
     if(!email){
       toast.warning('please provide a valid email address')
@@ -49,10 +50,10 @@ const handleForgotPassword =()=>{
           toast.success('Password reset email send, please check you email')
         })
         .catch(error=>{
-          toast.warning(error.message)
+          toast.error(error.message)
         })
     }
-    // ForgotPassword()
+    
 }
   return (
     <div className="min-h-screen flex justify-center items-center my-10">

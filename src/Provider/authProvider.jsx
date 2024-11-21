@@ -10,32 +10,30 @@ const AuthProvider = ({children}) => {
 
     const [user, setUser] = useState(null)
     const [loading,setLoading]= useState(true)
-
-    console.log(user)
-    // create a user with Google 
+   
     const signInWithGoogle =()=>{
         setLoading(true)
         return signInWithPopup(auth, GoogleProvider)
     }
-    // create a new user email and password
+    
     const createNewUser= (email, password)=>{
         setLoading(true)
        return  createUserWithEmailAndPassword (auth, email, password)
     }
-    // login user
+   
     const UserLogin = (email, password)=>{
         setLoading(true)
        return signInWithEmailAndPassword(auth, email, password)
     }
-    //update user profile
+   
     const updateUserProfile=(updatedData)=>{
         return updateProfile(auth.currentUser,updatedData)
     }
-    //forgot password
+   
     const ForgotPassword = (email)=>{
         return sendPasswordResetEmail(auth, email)
     }
-    // logout
+    
     const logOut=()=>{
         setLoading(true)
         return signOut(auth)

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const DonationCard = ({data}) => {
-    // console.log(data)
+
     const {id,image,title,description,division} = data;
     return (
         <div>

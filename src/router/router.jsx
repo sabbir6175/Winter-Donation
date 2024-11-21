@@ -27,12 +27,17 @@ import PrivateRoute from "./PrivateRoute";
       {
         path: '/DonationCampaigns',
         element: <DonationCompanions></DonationCompanions>,
-        loader: ()=>fetch('DonationData.json')
+        loader: ()=>fetch('/DonationData.json')
       },
       {
         path: '/DonationCampaigns/:id',
         element: <PrivateRoute><DonateDetails></DonateDetails></PrivateRoute>,
-        loader: ()=>fetch('DonationData.json')
+        loader: async ({params})=>{
+            const response = await fetch('/DonationData.json')
+            const data = await response.json()
+            const singleData = data.find(D =>D.id == params.id)
+            return singleData;
+        }
       },
       {
         path: '/HowToHelp',

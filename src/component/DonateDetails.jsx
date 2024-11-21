@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 const DonateDetails = () => {
   const DonationCart = useLoaderData();
+  console.log(DonationCart)
   // Fetch the campaign data
   const [formData, setFormData] = useState({
     quantity: "",
@@ -33,7 +34,7 @@ const DonateDetails = () => {
   return (
     <div className="max-w-3xl mx-auto flex justify-between p-6 bg-white rounded-lg shadow-lg">
      <div>
-      cart commning
+      
      </div>
 
       {/* Donation Form */}

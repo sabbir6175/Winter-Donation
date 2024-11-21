@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
    const {user,logOut} = useContext(AuthContext)
-//    console.log(user)
+
     return (
         <div>
             <div className="min-h-screen bg-gray-100 flex items-center justify-center ">
