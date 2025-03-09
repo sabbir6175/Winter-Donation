@@ -22,7 +22,7 @@ const DonationCard = ({data}) => {
               </p>
               <Link
                 to={`/DonationCampaigns/${id}`}
-                className="block mt-4 text-center bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-600 transition"
+                className="block mt-4 text-center  bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-600 transition"
               >
                 Donate Now
               </Link>

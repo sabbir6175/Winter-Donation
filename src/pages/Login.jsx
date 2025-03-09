@@ -26,7 +26,7 @@ const Login = () => {
             navigate(location?.state? location.state : '/')
           })
           .catch(error=>{
-           toast.error(error.code)
+           toast.error(error.code) 
           })
   }
   const handleGoogleSignIn = ()=>{

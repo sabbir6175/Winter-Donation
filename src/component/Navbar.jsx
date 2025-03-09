@@ -22,7 +22,7 @@ const Navbar = () => {
   );
   return (
     <div className=" ">
-      <div className="fixed top-0 px-4 py-3  bg-opacity-50 backdrop-blur-md bg-orange-300 z-10 w-full">
+      <div className="fixed top-0 px-4 py-2  bg-opacity-50 backdrop-blur-md z-10 w-full">
         <div className="navbar container mx-auto">
           <div className="navbar-start">
             <div className="dropdown">
@@ -72,8 +72,8 @@ const Navbar = () => {
            {
             user && user?.email? (
               <>
-              <img src= {user && user?.photoURL} className='w-8 ml-6 h-8 md:w-16 md:h-16 rounded-full object-cover border-2 border-blue-500'  alt="" />
-              <Link to={'/login'} onClick={logOut} className="btn md:ml-3 px-2 md:px-6 btn-sm md:btn-lg btn-warning ">Log-out</Link>
+              <img src= {user && user?.photoURL} className='w-8 ml-6 h-8 md:w-12 md:h-12 rounded-full object-cover border-2 border-blue-500'  alt="" />
+              <Link to={'/login'} onClick={logOut} className="btn md:ml-3 px-2 md:px-6 btn-sm md:btn-md btn-warning ">Log-out</Link>
               </>
               
             ):(
@@ -89,3 +89,12 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
+
